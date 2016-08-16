@@ -1,0 +1,116 @@
+
+
+<template name="mainLayout">
+  <header><h1 id="title">This is EtherTicket (testing)</h1></header>
+  <main>
+    {{>Template.dynamic template=main}}
+    <hr>
+    {{> UserInfo}}
+    {{> BlockInfo}}
+
+  </main>
+  <footer>2016 NTU hackathon</footer>
+</template>
+
+
+<!-- (1) Home -->
+<template name="Home">
+	<h2>Welcome to EtherTicket!</h2>
+	<p>Enjoy your wonderful trip on tickets purchasing!</p>
+	<button class="start">Start</button>
+
+</template>
+
+<template name="UserInfo">
+	<h1>This is userinfo</h1>
+</template>
+
+<template name="BlockInfo">
+	<h1>This is blockinfo</h1>
+</template>
+
+
+<!-- (2) Buy/Sell -->
+<template name="BuySell">
+	<div>
+    <button class="buy">Buy</button>
+    <button class="sell">Sell</button> <br>
+    <button class="back">Back</button>
+	
+    </div>
+</template>
+
+
+<!-- (3) Select Concert -->
+<template name="SelectConcert">
+	<form>
+        <h2>Concert Address:</h2>
+        <input type="text" name="concertName">
+        <input type="submit" value="Go!">
+    </form> <br>
+        <button class="back">Back</button>
+
+</template>
+
+
+<!-- (4) Buy -->
+<template name="Buy">
+	<h3>BeerNight!</h3>
+    Singer:             Mumin<br>
+    Place:   			Central Park, NYC<br>
+    Start Time: 		2015/7/29 18:00<br>
+    End Time:   		2015/7/29 21:00<br>
+    Ticket Price:       $499<br>
+    Tickets Available:  38<br>
+    <button>Buy!</button> <br>   
+    <button class="back">Back</button>
+
+</template>
+
+
+<!-- (5) Confirm Buy -->
+<template name="ConfirmBuy">
+    <h3>Now you are buying BeerNight!</h3>
+    Your current account balance: 	$2,998.00145<br>
+    Ticket price: 					$499<br>
+    Amount: 						2<br>
+    Total: 							$998<br>
+    Transaction fee: 				$0.00145<br>
+    Account balance after deal: 	$2,000.00<br>
+    <button class="yes">Buy ticket!</button>
+    <button class="no">Cancel</button>
+    
+
+</template>
+
+
+<!-- (6) Sell -->
+<template name="Sell">
+	<h2>Start your concert right now!</h2>
+    <form>
+        Concert Name:				<input type="text" name="concertName"><br>
+        Start Time:					<input type="text" name="startTime"><br>
+        End Time:					<input type="text" name="endTime"><br>
+        Refund Due Time:			<input type="text" name="refundDeadline"><br>
+        Amount of Tickets Created:	<input type="text" name="ticketAmount"><br>
+        Ticket Price:				<input type="text" name="ticketPrice"><br>
+        Others to say:				<input type="textarea" name="intro"><br>
+        <input type="submit" value="Create concert!">
+    </form>
+        <button class="back">Back</button>
+
+</template>
+
+
+<!-- (7) Confirm Sell -->
+<template name="ConfirmSell">
+    <h3>Creating concert "BeerNight!"</h3>
+    Start Time:			2015/7/29 18:00<br>
+    End Time:   		2015/7/29 21:00<br>
+    Refund Due Time:	2015/7/22 12:00<br>
+    Ticket Price:       $499<br>
+    Tickets Amount:  	500<br>
+    Intro:			Welcome to Mumin's first personal concert held in San Diego. Let's enjoy the beach, the beer, and the music together!<br>
+    <button class="yes">Create concert!</button>
+    <button class="no">Cancel</button>
+</template>
