@@ -3,9 +3,7 @@ the simple version of Smart Ticket, ONLY CAPABLE OF BUY AND SELL
 
 file structure based on simlpe-dapp-example
 
-templateVar hack
-
-added meteor package: 
+# Added meteor package: 
 
 ethereum:web3
 
