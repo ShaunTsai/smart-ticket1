@@ -6,11 +6,19 @@ file structure based on simlpe-dapp-example
 templateVar hack
 
 added meteor package: 
+
 ethereum:web3
+
 frozeman:template-var
+
 frozeman:persistent-minimongo
+
 session
+
 check
-kadira:flow-router   
+
+kadira:flow-router
+
 kadira:blaze-layout
+
 routing guide here:https://github.com/kadirahq/flow-router
